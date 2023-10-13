@@ -5,9 +5,11 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main", "Nika's_feature"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main",  "Nika's_feature"]
+    types: [opened, synchronize]
+  workflow_dispatch:
 
 jobs:
   build:
